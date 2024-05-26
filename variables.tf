@@ -20,7 +20,7 @@ variable "content_type" {
     default = {
         "css"  = "text/css"
         "ico"  = "image/x-icon"
-		"js"   = "application/javascript"
-		"html" = "text/html; charset=utf-8"
+        "js"   = "application/javascript"
+        "html" = "text/html"
     }
 }
