@@ -1,5 +1,7 @@
 .devenv
 
+/mutable_modules
+
 **/.terraform/*
 *.tfstate
 *.tfstate.*

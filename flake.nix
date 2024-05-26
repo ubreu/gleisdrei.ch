@@ -24,6 +24,10 @@
           languages.terraform = {
             enable = true;
           };
+          languages.javascript = {
+            enable = true;
+            npm.enable = true;
+          };
           
           # project specific environment variables or commands/aliases
           env.PROJECT_NAME = "gleisdrei.ch";

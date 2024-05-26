@@ -23,3 +23,16 @@ resource "google_storage_bucket" "static_website" {
     not_found_page   = "404.html"
   }
 }
+
+resource "google_storage_bucket_access_control" "public_rule" {
+  bucket = google_storage_bucket.static_website.id
+  role   = "READER"
+  entity = "allUsers"
+}
+
+resource "google_storage_bucket_object" "site" {
+  for_each     = fileset("site/dist/site/browser", "*")
+  source       = "site/dist/site/browser/${each.value}"
+  name         = "${each.value}"
+  bucket       = google_storage_bucket.static_website.id
+}

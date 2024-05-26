@@ -1,0 +1,29 @@
+<style>
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh; /* Full viewport height */
+    justify-content: center;
+    background-color: rgb(45, 50, 125);
+}
+
+.column {
+    display: flex;
+    flex-direction: column; 
+}
+</style>
+
+<main class="main">
+  <div class="container">
+    <div class="column">
+      <sbb-icon svgIcon="picto:tracks-3-de-large-framed" class="sbb-icon-fit"></sbb-icon>
+    </div>
+    <div class="column">
+      <sbb-icon svgIcon="picto:sectors-a-it-small-framed" class="sbb-icon-fit"></sbb-icon>
+      <sbb-icon svgIcon="picto:sectors-b-fr-small-framed" class="sbb-icon-fit"></sbb-icon>
+      <sbb-icon svgIcon="picto:sectors-c-de-small-framed" class="sbb-icon-fit"></sbb-icon>
+    </div>
+  </div>
+</main>
+
+<router-outlet />
