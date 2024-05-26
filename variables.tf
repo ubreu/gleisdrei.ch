@@ -14,3 +14,13 @@ variable "services" {
     type = list(string)
     default = ["compute.googleapis.com"]
 }
+
+variable "content_type" {
+    type = map(string)
+    default = {
+        "css"  = "text/css"
+        "ico"  = "image/x-icon"
+		"js"   = "application/javascript"
+		"html" = "text/html; charset=utf-8"
+    }
+}

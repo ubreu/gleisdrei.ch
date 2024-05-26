@@ -1,8 +1,12 @@
 # Website for gleisdrei.ch
 
-## Setup
-
+This repository contains the static assets for gleisdrei.ch and the required Google cloud infrastructure configuration via Terraform.
+The setup is based on the following guides & tutorials:
 - https://cloud.google.com/storage/docs/hosting-static-website
+- https://cloud.google.com/cdn/docs/setting-up-cdn-with-bucket
+- https://cloud.google.com/load-balancing/docs/https/ext-load-balancer-backend-buckets
+
+## Setup
 
 ### Initialize the gcloud SDK
 
